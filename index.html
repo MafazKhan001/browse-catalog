@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRSS-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="D:\VS Code\browse catalog\style.css">
+
+
+</head>
+
+<body>
+    <section class="container px-0">
+        <div class="row align-items-center my-3">
+            <div class="col-md-5">
+                <a href="search"><img class="img-fluid" src="D:\VS Code\random\logo.png"></a>
+            </div>
+            <div class="col-md-7 top-link d-flex justify-content-end">
+                <a class="mr-5" href="search">Welcome Guest</a>
+                <a href="search">Sign In</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="map">
+        <div class="container leaflet-top">
+            <div class="row">
+                <div class="col-lg-3 col-6 mt-3 ml-5">
+                    <form class="form-inline">
+                        <label class="d-lg-inline d-none">Zoom To Location</label><br>
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-lg-3 mt-0 ml-md-4 ml-0 filter">
+                    <div class="text-center">
+                        <label class="my-0 d-lg-inline d-none">FILTERS</label><br>
+                        <a href="search" class="btn btn-warning btn-lg mr-2 when-small"><i class="fa fa-bars"></i> Criteria</a>
+                        <a href="search" class="btn btn-warning btn-lg when-small"><i class="fa fa-bars"></i> Satellite</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-8 mt-lg-3 mt-2 ml-lg-5 ml-md-5 ml-5 d-flex justify-content-start aoi">
+                    <div class="text-center">
+                        <label class="my-0 d-lg-inline d-none">Define Area of Interest</label><br>
+                        <a href="search" class="btn btn-warning btn-lg mr-2 when-small"><i class="fa fa-pen-square"></i> Draw</a>
+                        <a href="search" class="btn btn-warning btn-lg mr-2 when-small"><i class="fa fa-map-pin"></i> Coordinates</a>
+                        <a href="search" class="btn btn-warning btn-lg when-small"><i class="fa fa-upload"></i> Upload</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-start left">
+            <a href="search" class="btn btn-custom"><i class="fa fa-camera"></i></a>
+        </div>
+
+
+        <div class="right d-flex justify-content-end">
+            <a href="search" class="btn btn-custom"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+
+        <div class="rightt d-flex justify-content-end">
+            <a href="search" class="btn btn-custom"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+
+        <section class="container-fluid leaflet-bottom foot">
+            <div class="row">
+                <div class="btn-group dropup d-lg-none d-block py-0">
+                    <button type="button" class="btn btn-secondary btn-lg dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="dropdown-menu inside">
+                        <a href="search">
+                            <span class="golden">Date: </span><span class="black">2018-07-10 </span><span
+                            class="golden">to</span><span class="black"> 2023-11-09</span>
+                        </a><br>
+                        <a href="search">
+                            <span class="golden">Inc Angle: </span><span class="black">0.0-30.0°</span>
+                        </a><br>
+                        <a href="search">
+                            <span class="golden">Snow Cover: </span><span class="black">0-100%</span>
+                        </a><br>
+                        <a href="search">
+                            <span class="golden">Cloud Cover: </span><span class="black">0-100%</span>
+                        </a><br>
+                        <a href="search">
+                            <span class="golden">Archive Products: </span><span class="black">PRSS-1,PAKTES1A</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md d-lg-block d-none py-2">
+                    <span class="golden">Date: </span><span class="white">2018-07-10 </span><span class="golden"> to
+                    </span><span class="white"> 2023-11-09</span>
+                </div>
+                <div class="col-md d-lg-block d-none py-2">
+                    <span class="golden">Inc Angle: </span><span class="white">0.0-30.0°</span>
+                </div>
+                <div class="col-md d-lg-block d-none py-2">
+                    <span class="golden">Snow Cover: </span><span class="white">0-100%</span>
+                </div>
+                <div class="col-md d-lg-block d-none py-2">
+                    <span class="golden">Cloud Cover: </span><span class="white">0-100%</span>
+                </div>
+                <div class="col-md d-lg-block d-none py-2">
+                    <span class="golden">Archive Products: </span><span class="white">PRSS-1,PAKTES1A</span>
+                </div>
+        </section>
+    </div>
+
+
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

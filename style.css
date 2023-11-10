@@ -1,0 +1,167 @@
+.img-fluid {
+    height: 77px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-link a {
+    color: #2d405f;
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.top-link a:hover {
+    color: #ffb600;
+}
+
+#map {
+    height: 100vh;
+
+}
+
+.form-inline label {
+    color: black;
+    font-weight: bolder;
+}
+
+.filter label {
+    color: black;
+    font-weight: bolder;
+}
+
+.aoi label {
+    color: black;
+    font-weight: bolder;
+}
+
+.filter a,
+.aoi a {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 1em;
+    color: aliceblue;
+    border: transparent;
+    pointer-events: auto;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #272d33;
+    color: aliceblue;
+}
+
+.form-control {
+    pointer-events: auto;
+}
+
+.left .btn-custom {
+    font-size: 26px;
+    line-height: 1em;
+    padding: 0.8em;
+    border: none;
+    background-color: #ffb600;
+    margin-top: 210px;
+    z-index: 50000;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3), 0 4px 15px -5px transparent;
+    pointer-events: auto;
+}
+
+
+
+.right .btn-custom {
+    font-size: 26px;
+    line-height: 1em;
+    padding: 0.8em;
+    border: none;
+    background-color: #ffb600;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3), 0 4px 15px -5px transparent;
+    z-index: 50000;
+    margin-top: -70px;
+    pointer-events: auto;
+}
+
+.rightt .btn-custom {
+    font-size: 26px;
+    line-height: 1em;
+    padding: 0.8em;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3), 0 4px 15px -5px transparent;
+    z-index: 50000;
+    margin-top: 5px;
+    pointer-events: auto;
+}
+
+@media (max-width:240px) {
+    .right .btn-custom {
+        margin-top: -9px;
+    }
+}
+
+.foot {
+    background-color: black;
+    height: 35px;
+}
+
+span {
+    font-size: 13px;
+}
+
+.golden {
+    color: #ffb600;
+}
+
+.white {
+    color: white;
+    font-weight: bold;
+}
+
+.inside span {
+    font-size: x-small;
+}
+
+.black {
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width:226px) {
+    .inside span {
+        font-size: xx-small;
+    }
+}
+
+.dropdown-toggle {
+    background-color: #ffb600;
+}
+
+@media (max-width:215px) {
+    .right .btn-custom {
+        font-size: 15px;
+    }
+
+    .rightt .btn-custom {
+        font-size: 15px;
+    }
+
+    .left .btn-custom {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:208px){
+    .when-small{
+font-size: smaller;
+padding:5px 6px;}
+}
